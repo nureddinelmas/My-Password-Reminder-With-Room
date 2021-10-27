@@ -1,21 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:id="@+id/recyclerViewTextView"
+
+    <LinearLayout
+
+        android:id="@+id/secondLinearLayout"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_margin="5dp"
-        android:background="#FF5722"
-        android:text="Test"
-        android:textColor="#D9E3D9"
-        android:textSize="29sp">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainLinearLayout">
 
-    </TextView>
+        <TextView
+            android:id="@+id/accountTextView"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_margin="5dp"
+            android:background="#FF5722"
+            android:paddingStart="10dp"
+            android:paddingTop="9dp"
+            android:text="Account Text View"
+            android:textColor="#F9FBE7"
+            android:textSize="29sp">
 
-</LinearLayout>
+        </TextView>
+
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_margin="5dp"
+            android:background="#FF5722"
+            android:paddingStart="10dp"
+            android:paddingTop="9dp"
+            android:text="User Name Text View"
+            android:textColor="#F9FBE7"
+            android:textSize="29sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/PasswordTextView"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_margin="5dp"
+            android:background="#FF5722"
+            android:paddingStart="10dp"
+            android:paddingTop="9dp"
+
+            android:text="Password Text View"
+            android:textColor="#F9FBE7"
+            android:textSize="29sp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/mainLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_margin="5dp"
+            android:background="#FF5722"
+            android:paddingStart="10dp"
+            android:paddingTop="9dp"
+            android:text="Main Linear Layout"
+            android:textColor="#F9FBE7"
+            android:textSize="29sp">
+
+        </TextView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

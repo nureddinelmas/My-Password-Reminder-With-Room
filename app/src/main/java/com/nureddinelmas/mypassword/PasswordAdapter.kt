@@ -2,12 +2,24 @@ package com.nureddinelmas.mypassword
 
 import android.content.Intent
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.nureddinelmas.mypassword.databinding.RecyclerRowBinding
 
 class PasswordAdapter(private val passwordList: ArrayList<Passwords>): RecyclerView.Adapter<PasswordAdapter.PasswordsHolder>() {
-    class PasswordsHolder(val binding: RecyclerRowBinding) : RecyclerView.ViewHolder(binding.root){
+
+
+
+    inner class PasswordsHolder(val binding: RecyclerRowBinding) : RecyclerView.ViewHolder(binding.root){
+
+        init {
+
+            binding.accountTextView.visibility = View.GONE
+            binding.userNameTextView.visibility = View.GONE
+            binding.PasswordTextView.visibility = View.GONE
+        }
+
 
     }
 
@@ -17,7 +29,7 @@ class PasswordAdapter(private val passwordList: ArrayList<Passwords>): RecyclerV
     }
 
     override fun onBindViewHolder(holder: PasswordsHolder, position: Int) {
-        holder.binding.recyclerViewTextView.text = passwordList[position].name
+        holder.binding.recyclerView.text = passwordList[position].name
 
         holder.itemView.setOnClickListener{
             val intent = Intent(holder.itemView.context, PasswordActivity::class.java)

@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
+
         var passwordsList = ArrayList<Passwords>()
         binding.recyclerView.layoutManager=LinearLayoutManager(this)
         val adapter = PasswordAdapter(passwordsList)
