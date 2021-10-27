@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nureddinelmas.mypassword">
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    package="myPasswordReminder">
 
     <application
         android:allowBackup="true"
@@ -12,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyPassword">
         <activity
-            android:name=".PasswordActivity"
+            android:name="com.nureddinelmas.myPasswordReminder.view.PasswordActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.nureddinelmas.myPasswordReminder.view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

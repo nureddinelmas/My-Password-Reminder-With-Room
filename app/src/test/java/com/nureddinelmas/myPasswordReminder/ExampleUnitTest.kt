@@ -1,4 +1,4 @@
-package com.nureddinelmas.mypassword
+package com.nureddinelmas.myPasswordReminder
 
 import org.junit.Test
 

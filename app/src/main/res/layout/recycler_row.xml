@@ -5,85 +5,99 @@
     android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-
-    <LinearLayout
-
-        android:id="@+id/secondLinearLayout"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="4dp"
+        app:elevation="14dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainLinearLayout">
-
-        <TextView
-            android:id="@+id/accountTextView"
-            android:layout_width="match_parent"
-            android:layout_height="77dp"
-            android:layout_margin="5dp"
-            android:background="#FF5722"
-            android:paddingStart="10dp"
-            android:paddingTop="9dp"
-            android:text="Account Text View"
-            android:textColor="#F9FBE7"
-            android:textSize="29sp">
-
-        </TextView>
-
-        <TextView
-            android:id="@+id/userNameTextView"
-            android:layout_width="match_parent"
-            android:layout_height="77dp"
-            android:layout_margin="5dp"
-            android:background="#FF5722"
-            android:paddingStart="10dp"
-            android:paddingTop="9dp"
-            android:text="User Name Text View"
-            android:textColor="#F9FBE7"
-            android:textSize="29sp">
-
-        </TextView>
-
-        <TextView
-            android:id="@+id/PasswordTextView"
-            android:layout_width="match_parent"
-            android:layout_height="77dp"
-            android:layout_margin="5dp"
-            android:background="#FF5722"
-            android:paddingStart="10dp"
-            android:paddingTop="9dp"
-
-            android:text="Password Text View"
-            android:textColor="#F9FBE7"
-            android:textSize="29sp">
-
-        </TextView>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-
-        android:id="@+id/mainLinearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/recyclerView"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="68dp"
-            android:layout_margin="5dp"
-            android:background="#FF5722"
-            android:paddingStart="10dp"
-            android:paddingTop="9dp"
-            android:text="Main Linear Layout"
-            android:textColor="#F9FBE7"
-            android:textSize="29sp">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        </TextView>
+            <LinearLayout
 
-    </LinearLayout>
+                android:id="@+id/mainLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:layout_margin="5dp"
+                    android:background="#FF5722"
+                    android:paddingStart="10dp"
+                    android:paddingTop="9dp"
+                    android:text="Main Linear Layout"
+                    android:textColor="#F9FBE7"
+                    android:textSize="29sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/secondLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/userNameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:background="#FF5722"
+                    android:paddingStart="10dp"
+                    android:paddingTop="9dp"
+                    android:textColor="#F9FBE7"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/PasswordTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:background="#FF5722"
+                    android:paddingStart="10dp"
+                    android:paddingTop="9dp"
+                    android:textColor="#F9FBE7"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:background="#FF5722"
+                    android:paddingStart="10dp"
+
+                    android:paddingTop="9dp"
+                    android:textColor="#F9FBE7"
+                    android:textSize="20sp">
+
+                </TextView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
