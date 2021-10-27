@@ -83,7 +83,7 @@
                 <TextView
                     android:id="@+id/comments"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:background="#FF5722"
                     android:paddingStart="10dp"

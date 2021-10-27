@@ -34,7 +34,7 @@ class PasswordActivity : AppCompatActivity() {
 
 
     fun clickedButton(view : View){
-        val account = Accounts(binding.textAccount.text.toString(), binding.textUserName.text.toString(), binding.textPassword.text.toString() )
+        val account = Accounts(binding.textTitle.text.toString(), binding.textUserName.text.toString(), binding.textPassword.text.toString(), binding.textComment.text.toString() )
 
 
         compositeDisposable.add(

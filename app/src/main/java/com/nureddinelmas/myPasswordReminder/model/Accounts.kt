@@ -15,7 +15,10 @@ data class Accounts (
     var userName : String,
 
     @ColumnInfo(name = "password")
-    var password: String
+    var password: String,
+
+    @ColumnInfo(name = "comment")
+    var comment : String
 
     ) {
 
