@@ -27,7 +27,9 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        val db = Room.databaseBuilder(applicationContext, AccountDatabase::class.java, "Accounts").build()
+        val db = Room.databaseBuilder(applicationContext, AccountDatabase::class.java, "Accounts")
+            .fallbackToDestructiveMigration()
+            .build()
         val accountDao = db.accountsDao()
 
         compositeDisposable?.add(
